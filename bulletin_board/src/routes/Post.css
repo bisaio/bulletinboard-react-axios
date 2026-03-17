@@ -1,0 +1,7 @@
+.container h2 {
+    margin-bottom: 1rem;
+}
+
+.container h2::first-letter{
+    text-transform: uppercase;
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Home.css'
 import type Post from '../interfaces/Post';
-import axios from 'axios';
+import bulletinFetch from '../axios/config';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     
     const getPosts = async () => {
         try {
-            const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
+            const response = await bulletinFetch.get("/posts")
             setPosts(response.data)
         } catch (error) {
             console.error(error);

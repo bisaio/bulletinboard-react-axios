@@ -1,11 +1,10 @@
 # bulletinboard_react_axios
-Bulletin board made with react and axios (API)
-
+Bulletin board made with react and axios <br/>
 Made with JSON Placeholder API: https://jsonplaceholder.typicode.com/
+
+- Dependencies used: Axios, React Router DOM, JSON Server
 
 ---
 
-- To run the project, access the folder bulletin_board via terminal and then use ```npm i``` to install dependencies.
-
-
-LEMBRA DE PEGAR COMO TA FEITO LA NO BOXDLETTERS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- Install dependencies by accessing the folder bulletin_board via terminal, then use ```npm i```. 
+- To run the project, use ```npm run dev``` in the same folder.

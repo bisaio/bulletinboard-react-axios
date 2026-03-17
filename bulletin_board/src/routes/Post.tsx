@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
-import type Post from "../interfaces/Post";
-import axios from "axios";
 import { useParams } from "react-router-dom";
+import bulletinFetch from "../axios/config";
+import type Post from "../interfaces/Post";
+import './Post.css'
 
 export default function Post() {
     const [post, setPost] = useState<Post>();
     const { id } = useParams();
 
-    const getPosts = async () => {
+    const getPost = async () => {
         try {
-            const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+            const response = await bulletinFetch.get(`/posts/${id}`)
             setPost(response.data)
         } catch (error) {
             console.error(error);
@@ -17,13 +18,19 @@ export default function Post() {
     }
 
     useEffect(() => {
-        getPosts()
+        getPost()
     }, [])
 
     return (
-        <div>
-            <h2>{post!.title}</h2>
-            <p>{post!.body}</p>
+        <div className="container">
+            {post ? (
+                <>
+                    <h2>{post.title}</h2>
+                    <p>{post.body}</p>
+                </>
+            ) : (
+                <p>Loading...</p>
+            )}
         </div>
     )
 }
