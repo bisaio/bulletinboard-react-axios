@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #17191F;
+}
+
+.navbar h2 a {
+    opacity: 1;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.new-btn {
+    font-weight: bold;
+    border: 1px solid #FFF;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.new-btn:hover {
+    background-color: #1E1F27;
+} 
