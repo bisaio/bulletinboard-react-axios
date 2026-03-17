@@ -28,7 +28,7 @@ export default function Home() {
                     <div className='post' key={post.id}>
                         <h2>{post.title}</h2>
                         <p>{post.body}</p>
-                        <Link className='btn' to={`/posts/${post.id}`}>Read more</Link>
+                        <Link className='btn' to={`/post/${post.id}`}>Read more</Link>
                     </div>
                 ))
             )}
