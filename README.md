@@ -2,7 +2,7 @@
 Bulletin board made with react and axios <br/>
 Made with JSON Placeholder API: https://jsonplaceholder.typicode.com/
 
-- Dependencies used: Axios, React Router DOM, JSON Server
+- Dependencies used: Axios and React Router DOM
 
 ---
 

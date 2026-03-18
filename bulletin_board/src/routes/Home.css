@@ -22,10 +22,11 @@
 }
 
 .btn {
+    all: unset;
     border: 1px solid #FFF;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
-    max-width: 100px;
+    max-width: max-content;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;

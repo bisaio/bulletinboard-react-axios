@@ -22,7 +22,7 @@ export default function Post() {
     }, [])
 
     return (
-        <div className="container">
+        <div className="post-container">
             {post ? (
                 <>
                     <h2>{post.title}</h2>
